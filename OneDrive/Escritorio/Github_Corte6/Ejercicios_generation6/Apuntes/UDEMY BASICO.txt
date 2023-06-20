@@ -1,0 +1,764 @@
+comentar codigo 
+
+// comentar en 1 linea
+/* */ para multiples lineas 
+
+console.clear () limpiar consola
+
+__
+console.time("hola")
+
+
+Console.timeend("final")
+
+__
+
+; es para finalizar un codigo 
+
+__
+
+ESLint
+herramienta de NODe.Js 
+
+es para solucionar errores
+__
+<
+Variables 
+
+Normal: camelCase
+
+Otro: snake_case 
+
+PascalCase
+
+
+*Hacer una variable 
+
+var categoria = "computadoras"
+
+*Hacer multiples variables
+
+var categoria = "computadoras"
+    marca = "marca famosa"
+    calificacion = 5
+* una variable no puede iniciar con un numero 
+
+var 1_hola = eso no puede ser
+
+
+Variables 
+
+Var 
+Let = puedes reasignar una variable
+const = no se puede reasignar una variable
+
+const = deben inicializar con un valor ejemplo:
+const = precio = 20 
+
+
+
+
+
+__
+
+Seccion 3: strings o cadenas de texto y sus 
+
+
+const = producto = "monitor 20"\"
+
+mostrara monitor 20"    (\ sirve para agregar las comillas al texto )
+
+
+crear un nuevo objeto de tipo string 
+
+const producto3 = new string("monitor de 27 pulgadas")
+distribuye hacia abajo la string 
+
+
+console.long(producto.length); es para conocer la cantidad de letras
+que tenga el texto
+
+
+console.log(producto.indexOF("tablet")); es para buscar una palabra
+en el archivo. 
+
+console.log(producto.includes("monitor")); 
+
+busca en la misma linea 
+
+Concatenar un String**
+
+const producto = "monitor 20 pulgadas";
+const precio "30 USD"; 
+
+console.log(producto.concat(precio));
+console.log(producto.concat("en descuento"));
+
+console.log (producto + "con un precio de : " + precio);
+console.log (producto,"con un precio de : ", precio);
+
+console.log("el producto ${producto} tiene un precio de $ {precio}");
+
+
+
+
+// eliminar el inicio.. (los espacios en blanco)
+console.log(producto. trimStar() );
+//eliminar el inicio.. (los espacios en blanco al final)
+console.log (producto.trimEnd() );
+//elimina al inicio y al final 
+console.log (producto. trimStar().producto.trimEnd() );
+//elimina al inicio y al final 
+console.log (producto.trim() )
+
+
+// .replace para reemplazar 
+console.log (producto.replace("pulgadas, "monitor curvo"));
+
+//.slice para cortar 
+¿
+console.log (producto.slice(0,10) );
+monitor 20 
+console.log (producto.slice(8) );
+" pulgadas
+no func.-
+console.log (producto.slice(2,1) );
+
+//Alternativa a slice, ordena solo 
+console.log (producto.substring(0,10));
+
+console.log (producto.substring(2,1));
+
+const usuario = "juan"; 
+console.log (usurio.chatAT(0));
+
+// entrega una sola letra 
+. 
+
+//.repetear te va a permitir repeti una cadena 
+
+const texto = "en promocion".repeat (3);
+
+// repite 3 veces ese texto 
+
+console.log (texto);
+console.log ("{producto} ${texto}!!!!"); 
+
+// split, dividir un string 
+const actividad = "esto aprendiendo JavaScript moderno" 
+console.log(actividad.split("")); uno le pone la condicion puede 
+ej:
+
+"Estoy"
+"aprendiendo"
+"JavaScript" 
+"moderno"
+
+
+const producto = "monitor 20 pulgadas"; 
+//touUpperCase Transforma todo a mayuscula
+console.log(producto.toUpperCase());
+//toLowerCase Transforma todo a minuscula
+console.log(producto.toLowerCase());
+
+const precio = 300;
+
+//convertir numero a String 
+
+console.log(precio.toString());
+
+>
+__
+
+<
+
+
+Seccion 4 Numeros en JavaScript
+
+//Crear numeros en javascript 
+
+const numero6 = new Number (80). se usa en objetos. 
+console.log(numero6); 
+
+
+Math para conocer funciones y puedes llamar funciones poniendo 
+
+Math y luego el punto.
+
+Ejemplo
+//Redondear hacia arriba 
+Variable = Math.Ceil(2.1);
+
+
+Orden de las operaciones.
+
+puntaje = 5 
+puntaje ++ // aumenta a la siguiente 
+++puntaje // aumenta altiro
+
+puntaje +=3; 
+aumenta a la variable. 
+Resultdo = 8
+ 
+
+// convierte una String a entero. 
+
+const numero1 = "20";
+console.log(Number.parseInt(numero1);
+// Revisar si es un numero entero o no 
+console.log(Number.inInteger(numero1);
+
+Seccion 5 operadores en JavaScript
+
+>
+__
+<
+Seccion 5 operadores en JavaScript
+
+// operador Mayor a...
+>
+// Operador Menor a ... 
+<
+
+
+
+
+____
+
+
+//Undefined
+let numero;
+console.log(numero);
+//Null
+let numero2 = null;
+console.log(numero2)
+
+
+Seccion6 
+Booleanos en JavaScripts
+
+
+
+const boolean4 =new Boolean(true);
+console.lo(typeof boolean4);
+
+
+
+
+>
+
+__
+typeof, es para ver el tipo de objeto:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.7
+
+objetos en javascript
+
+como crear objetos en javascript
+
+const nombre = “Monitor20 pulgadas”
+const precio = 300;
+const disponible = true;
+
+// un objeto agrupa todo en una sola variable 
+
+
+// objeto literal
+const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+console.log(producto);
+
+_
+
+cómo acceder a los valores de un objeto ?
+
+const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+console.log(producto);
+console.log(producto.nombre);
+console.log(producto[‘nombre’]);
+
+–
+
+•agregar o eliminar propiedades de un objeto
+
+  const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+console.log(producto);
+console.log(producto.nombre);
+
+// agrega una variable al objeto
+producto.imagen = imagen.jpg 
+// eliminar variables dentro de un objeto 
+delete producto.disponible;  -> se elimina disponible
+
+
+•Destructuring de objetos 
+
+  const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+const nombre= producto.nombre
+
+console.log(nombre);
+
+const { nombre } = producto;
+console.log(nombre)
+// Además de traer el valor crea la variable
+___
+•Objetos dentro de objetos 
+
+  const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,,
+informacion : { 
+	medidas:{
+	peso: ‘1kg’,
+	medida: ‘1m’
+},
+fabricacion: {
+	pais:’china’
+}
+      }
+}
+
+console.log(producto):
+console.log(producto.informacion.peso):
+console.log(producto.informacion.medida):
+___
+
+
+
+
+
+•Destructuring de objetos anidados IMPORTANTE
+
+
+  const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+informacion : { 
+	medidas:{
+	peso: ‘1kg’,
+	medida: ‘1m’
+},
+fabricacion: {
+	pais:’china’
+}
+      }
+}
+
+//ASI SE ACCEDE A FABRICACION 
+const { nombre, informacion: {fabricacion}} = producto;
+
+console.log(nombre);
+console.log(informacion);
+console.log(fabricacion);
+
+
+El problema de los objetos : 
+
+
+
+const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+
+}
+
+// cuando es const. 
+
+se puede reescribir
+
+
+
+
+
+
+
+
+Congelar un objeto para no poder modificar 
+
+// con el operador estricto, no se permiten malas practicas en este documento. 
+// para cambiar tu codigo se necesitan una serie de metodos. 
+
+
+
+
+“use strict”
+
+
+ const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+producto.disponible = False;
+producto.imagen = “imagen.jpg”; 
+
+console.log (producto);
+
+booglean === bollean2 
+
+
+// Object  = producto, se congelará. y no se podrá realizar modificaciones ni eliminaciones
+
+
+
+Object.freeze (producto);
+
+producto.disponible = false;
+producto.imagen = “imagen.Jpg”;
+
+//Esto nos dirá si el objeto está congelado o no 
+console.log(Object.isFrozen(producto));
+
+
+
+console.log(producto);
+
+___
+
+
+
+
+
+
+Sellar un Objeto
+
+
+//no se puede agregar ni,Eliminar pero, si puedo modificar lo que existe.
+
+ Object.seal(producto); 
+
+// Freeze no te deja hacer nada, y seal te deja modificar solamente. 
+ 
+
+//cómo copiar 2 objetos. 
+
+Const resultado = Object.assign(objeto1,objeto2)
+
+
+// spread Operator o Rest Operator 
+
+const resultado2 =  { …producto,...medidas
+
+los … = significa copia está variable (objeto)
+
+console.log(resultado2)
+
+// this. 
+
+la palabra this. busca propiedad dentro de un mismo objeto.
+
+Object constructor 
+
+// Object literal 
+
+ const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+
+
+–
+//Object Constructor 
+
+function Producto 
+function Producto(nombre,precio) {
+	this.nombre = nombre;
+	this.precio = precio;
+	this.disponible = true;
+}
+
+const producto2 = new Producto (‘Monitor 24 pulgadas’, 500);
+console.log(producto2);
+
+const producto3 = new Producto(‘Television’, 100);
+console.log(producto3)
+
+
+—--------
+
+ Object. Keys. Values y entries. 
+
+
+
+ const producto = {
+	nombre: “monitor 20 pulgadas,
+precio: 300,
+disponible: True,
+}
+
+
+// te retorna las llaves 
+console.log( Object.keys (producto) );
+ej: 
+Nombre
+precio
+disponible
+
+//te retorna los valores 
+console.log ( Object.values( producto)); 
+ej: 
+monitor 20 pulgadas 
+300 
+true
+
+//entries te retorna todo. 
+console.log( Object.entries (producto))
+
+
+Arrays.
+
+// 
+
+
+
+
+
+//declaracion de funcion 
+
+//declaraion de funcion (function declaration)
+
+
+function sumar()
+    {
+        console.log(2 + 2);
+
+
+    }
+
+
+sumar();
+
+
+
+
+
+
+// expresion de funcion (function expression)
+//(pregunta entrevista)
+
+
+const sumar2 = function() {
+    console.log(3 +3);
+
+
+}
+
+//  hosting 
+
+//declaraion de funcion (function declaration)
+sumar();
+function sumar()
+    {
+        console.log(2 + 2);
+
+
+    }
+//este si funcionaria
+
+
+
+
+
+
+
+
+// expresion de funcion (function expression)
+//(pregunta entrevista)
+sumar2();
+const sumar2 = function() {
+    console.log(3 +3);
+
+
+}
+
+
+// este no funcionaria
+
+
+// diferencia entre funcion y metodo 
+
+
+const numero1 = 20;
+const numero2 = “20”;
+
+
+console.log(perseInt(numero2) ) // esto es una funcion
+
+
+console.log (numero1.toString()) // esto es un metodo. 
+
+
+
+// funcion declarativa, 
+puede ser llamando aun variable 
+
+function saludar (nombre,apellido =  "delatorre"){
+    console.log(`Hola ${nombre} ${apellido}`)
+
+
+}
+saludar(`juan`,`dela torre`);
+
+
+
+
+
+
+// parametros por default 
+
+
+
+
+
+
+
+
+
+
+
+//ejemplo con múltiples funcion
+
+
+
+function  sumar (a,b) {
+    return a + b;
+
+
+}
+
+
+const resultado = sumar(2,3);
+
+
+console.log(resultado);
+
+
+
+
+
+
+//Ejemplo más avanzado
+let total = 0;
+function agregarCarrito(precio){
+    return total+=precio;
+
+
+}
+function calcularImpuesto(total) {
+    return total + 1.15;
+   
+
+
+}
+
+
+total = agregarCarrito(300);
+total = agregarCarrito(100);
+total = agregarCarrito(600);
+
+
+const totalPagar = calcularImpuesto(total);
+console.log(`El precio final es: ${totalPagar}`);
+
+
+
+
+
+
+//Añadir funciones en un Objeto
+añadir / eliminar/editar objeto.
+
+
+// array fuctions 
+
+// Arrow functions en métodos de propiedad
+
+
+
+
+const reproductor = {
+    cancion: '',
+    reproducir: id => console.log(`Reproduciendo canción id ${id}`),
+    pausar: () => console.log('pausando...'),
+    borrar: id => console.log(`Borrando canción con id: ${id}`),
+    crearPlaylist: nombre =>  console.log(`Creando la Playlist ${nombre}`),
+    reproducirPlaylist: nombre =>  console.log(`Reproduciendo la Playlist ${nombre}`),
+
+
+    // También existen los Set y Get si tienes experiencia con esos términos, y si no, set es para añadir un valor, get es para obtenerlo...
+
+
+    set nuevaCancion(cancion) {
+        this.cancion = cancion;
+        console.log(`Añadiendo ${cancion}`)
+    },
+    get obtenerCancion() {
+        console.log(`${this.cancion}`)
+    }
+}
+reproductor.reproducir(30);
+reproductor.pausar();
+
+
+// Tambien los métodos pueden quedarse por fuera
+// reproductor.borrar = function(id) {
+   
+// }
+reproductor.borrar(20);
+reproductor.crearPlaylist('Heavy Metal');
+reproductor.reproducirPlaylist('Heavy Metal');
+
+
+
+
+// Probando set y get se utilizando de la siguiente forma
+reproductor.nuevaCancion = 'Enter Sandman';
+reproductor.obtenerCancion;
+
+
+
+
+
+
+
+
+Proyecto : 
+
+1.-

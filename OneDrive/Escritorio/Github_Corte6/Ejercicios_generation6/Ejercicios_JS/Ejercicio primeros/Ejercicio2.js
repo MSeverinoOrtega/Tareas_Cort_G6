@@ -1,0 +1,1 @@
+const documento = document.write("Hola Mundo")

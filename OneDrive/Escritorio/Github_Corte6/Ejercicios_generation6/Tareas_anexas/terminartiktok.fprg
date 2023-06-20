@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mauricio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-07 10:23:53 a. m."/>
+        <attribute name="created" value="TWF1cmljaW87REVTS1RPUC1OUk5HMFI0OzIwMjMtMDYtMDY7MTA6MTY6MTggcC4gbS47MzM2Nw=="/>
+        <attribute name="edited" value="TWF1cmljaW87REVTS1RPUC1OUk5HMFI0OzIwMjMtMDYtMDc7MTA6MjM6NTMgYS4gbS47MzszNDYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;recuerda siempre, Indicar si es : true o false.&quot;" newline="True"/>
+            <declare name="videoguardado" type="Boolean" array="False" size=""/>
+            <declare name="si" type="Boolean" array="False" size=""/>
+            <declare name="cargar" type="Boolean" array="False" size=""/>
+            <declare name="grabaste" type="Boolean" array="False" size=""/>
+            <declare name="videocargado" type="String" array="False" size=""/>
+            <declare name="filtros" type="Boolean" array="False" size=""/>
+            <declare name="filtro2" type="Boolean" array="False" size=""/>
+            <declare name="cargarvideo2" type="Boolean" array="False" size=""/>
+            <declare name="filtro4" type="Boolean" array="False" size=""/>
+            <output expression="&quot;&#191;quieres subir un video a tik tok?&quot;" newline="True"/>
+            <input variable="cargar"/>
+            <if expression="cargar = true">
+                <then>
+                    <output expression="&quot;tienes el video guardado?&quot;" newline="True"/>
+                    <input variable="videoguardado"/>
+                    <if expression="videoguardado = true">
+                        <then>
+                            <output expression="&quot;carguemos el video en tu aplicacion Tik Tok&quot;" newline="True"/>
+                            <input variable="cargarvideo2"/>
+                            <if expression="cargarvideo2 = true">
+                                <then>
+                                    <output expression="&quot;quieres agregar un filtro?&quot;" newline="True"/>
+                                    <input variable="filtro4"/>
+                                    <if expression="filtro4 = true">
+                                        <then>
+                                            <output expression="&quot;filtro seleccionado&quot;" newline="True"/>
+                                            <output expression="&quot;subiendo video&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;subiendo video sin filtro&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;realicemos un video para cargar el tiktok&quot;" newline="True"/>
+                            <output expression="&quot;grabaste el video?&quot;" newline="True"/>
+                            <input variable="grabaste"/>
+                            <if expression="grabaste = true">
+                                <then>
+                                    <output expression="&quot;cargar video a tik tok&quot;" newline="True"/>
+                                    <input variable="videocargado"/>
+                                    <output expression="&quot; quieres ingresar algun filtro?&quot;" newline="True"/>
+                                    <input variable="filtros"/>
+                                    <if expression="filtros = true">
+                                        <then>
+                                            <output expression="&quot;selecciona un filtro&quot;" newline="True"/>
+                                            <input variable="filtro2"/>
+                                            <if expression="filtro2 = true">
+                                                <then>
+                                                    <output expression="&quot;video subido con los filtros&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;no seleccionaste ningun filtro, video Subido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;video Subido&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot; no cargaste ningun video&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="&quot; gracias por usar la apliacion&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;gracias por usar nuestra aplicacion&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
